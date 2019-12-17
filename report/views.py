@@ -1,5 +1,5 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
-from django_plotly_dash.access import login_required
 from plotly.offline import plot
 import plotly.graph_objects as go
 
@@ -34,4 +34,24 @@ def home(request):
 
 @login_required()
 def grafiti(request):
-    return render(request, 'report/graph.html')
+    return render(request, 'report/graph.html')\
+
+
+def datagram(request):
+    return render(request, 'report/datagram.html')
+
+def datagram2(request):
+    return render(request, 'report/datagram2.html')
+
+def dropdown(request):
+    return render(request, 'report/dropdown.html')
+
+def callback(request):
+    return render(request, 'report/callback.html')
+
+def callback2(request):
+    return render(request, 'report/callback2.html')
+
+def interactive(request):
+    return render(request, 'report/interactive.html')
+

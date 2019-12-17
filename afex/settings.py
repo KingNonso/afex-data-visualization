@@ -189,3 +189,6 @@ PLOTLY_COMPONENTS = [
 PLOTLY_DASH = {
     "view_decorator": "django_plotly_dash.access.login_required",
 }
+
+LOGIN_URL = "/admin/"
+LOGOUT_URL = '/admin/'
