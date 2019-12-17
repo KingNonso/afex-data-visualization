@@ -6,6 +6,8 @@ import pandas as pd
 df = pd.read_csv(
     'https://gist.githubusercontent.com/chriddyp/c78bf172206ce24f77d6363a2d754b59/raw/c353e8ef842413cae56ae3920b8fd78468aa4cb2/usa-agricultural-exports-2011.csv')
 
+# df = pd.read_csv('data/workbench_warehouse.csv')
+# df = pd.read_csv('data/inventory_item.csv')
 
 def generate_table(dataframe, max_rows=10):
     return html.Table(
@@ -25,6 +27,6 @@ app = DjangoDash('DataGram', external_stylesheets=external_stylesheets)
 
 
 app.layout = html.Div(children=[
-    html.H4(children='Agriculture Exports (2011)'),
+    html.H4(children='Agriculture Products'),
     generate_table(df)
 ])
