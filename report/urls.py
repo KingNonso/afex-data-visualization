@@ -16,4 +16,5 @@ urlpatterns = [
     path('5/', views.callback, name='callback'),  # similar to 3
     path('6/', views.callback2, name='callback2'),
     path('7/', views.interactive, name='interactive'),
+    path('logout/', views.logout_view, name='logout_view'),
 ]

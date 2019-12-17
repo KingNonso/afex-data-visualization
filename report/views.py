@@ -1,5 +1,5 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from plotly.offline import plot
 import plotly.graph_objects as go
 
@@ -61,3 +61,11 @@ def callback2(request):
 def interactive(request):
     return render(request, 'report/interactive.html')
 
+
+from django.contrib.auth import logout
+
+
+def logout_view(request):
+    logout(request)
+    return redirect("/admin/")
+    # Redirect to a success page.
