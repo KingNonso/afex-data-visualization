@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 
 
 # Create your views here.
-
+@login_required()
 def home(request):
     def scatter():
         x1 = [1, 2, 3, 4]
@@ -34,7 +34,7 @@ def home(request):
 
 @login_required()
 def grafiti(request):
-    return render(request, 'report/graph.html')\
+    return render(request, 'report/graph.html')
 
 
 def datagram(request):
@@ -46,12 +46,18 @@ def datagram2(request):
 def dropdown(request):
     return render(request, 'report/dropdown.html')
 
+
+@login_required()
 def callback(request):
     return render(request, 'report/callback.html')
 
+
+@login_required()
 def callback2(request):
     return render(request, 'report/callback2.html')
 
+
+@login_required()
 def interactive(request):
     return render(request, 'report/interactive.html')
 
