@@ -9,7 +9,7 @@ channels==2.3.1
 channels-redis==2.4.1
 Click==7.0
 constantly==15.1.0
-cryptography==2.8
+cryptography==3.2
 daphne==2.4.0
 dash==1.7.0
 dash-core-components==1.6.0
