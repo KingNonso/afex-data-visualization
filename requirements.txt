@@ -31,7 +31,7 @@ itsdangerous==1.1.0
 Jinja2==2.10.3
 MarkupSafe==1.1.1
 msgpack==0.6.2
-numpy==1.17.4
+numpy==1.22.0
 pandas==0.25.3
 plotly==4.4.1
 psycopg2==2.8.4
